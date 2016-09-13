@@ -1,6 +1,0 @@
-@mixin borderRadius($radius:$border-radius){
-  @if $enable-rounded {
-    border-radius:$radius;
-    -webkit-border-radius: $radius;
-  }
-}
