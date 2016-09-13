@@ -1,0 +1,12 @@
+{
+  "data":{
+    "msg":"第一个数据",
+    "classification":[
+      {
+        "id":1001,
+        "imgurl":"../static/images/img_pro_type_01.jpg",
+        "title":"女装"
+      }
+    ]
+  }
+}

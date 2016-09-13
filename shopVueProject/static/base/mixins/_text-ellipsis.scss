@@ -1,0 +1,14 @@
+@mixin text-ellipsis($bool:true,$num:$lines) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @if $bool {
+    white-space: nowrap;
+  } @else {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $num
+  }
+
+}
+

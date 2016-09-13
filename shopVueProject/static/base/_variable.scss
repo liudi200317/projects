@@ -1,0 +1,64 @@
+$font-size-root:                  62.5% !default;
+$font-lineHeight:                  1.5 !default;
+$fontFamily:                     "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif !default;
+// ios华文黑体,Android 4.0之后,Android 4.0之前
+
+///字体大小
+$font-size-normal:                1.6rem;
+$font-size-lg:                    1.8rem;
+//更多字体大小
+$font-size-sm:                    1.4rem;
+//顶部北京店字体大小,浅色字体说明文字大小,底部导航文字
+$font-size-xs:                    1.2rem;
+//字体颜色
+$font-dark-color:                      #333 !default;
+
+$colorBg:                        #fff !default;
+
+//弹出层背景色
+$dialog-backgroundColor:           #FAFAFC !default;
+//弹出层遮罩背景色
+$mask-backgroundColor:                     rgba(0,0,0,0.5) !default;
+
+$colorPlaceholder:               #999 !default; // input placeholder color
+$colorLink:                      #08c !default;
+
+//按钮颜色
+$btn-defulat-color:                 #353535 !default;
+$btn-light-color:                   #0BB20C !default;
+
+//边框颜色
+$border-color:                     #e8e8e8 !default;
+
+//边框圆角
+$border-radius:                      0.4rem !default;
+
+//通过启用或禁用可选功能快速修改全局样式
+$enable-rounded:            true !default;
+$enable-shadows:            true !default;
+
+//margin or padding  值
+$mt-default:                       1rem !default;
+$mb-default:                       1rem !default;
+
+// 省略号行数
+$lines:                      2;
+
+// 定制化
+$color-01:           #f3458a;
+$color-02:         #b271db;
+$color-03:         #fda83a;
+
+$font-lignt-color:           #b4b4b4;
+$font-gray:           #666;
+$bg-gray:           #eee;
+
+%color-01{
+  color:$color-01
+}
+%color-02{
+  color:$color-02
+}
+%color-03{
+  color:$color-03
+}

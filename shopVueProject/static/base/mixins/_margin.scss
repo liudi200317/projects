@@ -1,0 +1,12 @@
+
+@mixin margin-bt($isTop,$val:$mb-default){
+  @if $isTop{
+    margin-bottom:$val;
+  }@else{
+    margin-top:$val;
+  }
+}
+
+%mtb{
+   @include margin-bt(true,$mb-default)
+ }
