@@ -1,0 +1,341 @@
+@media screen and (max-width: 321px) {
+    body {
+        font-size:16px
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:400px) {
+    body {
+        font-size:17px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        font-size:19px
+    }
+}
+
+html,body,div,ul{
+    margin:0;
+    padding:0;
+}
+
+html,body,.main{
+    height:100%;
+}
+
+ul li{
+    list-style:none;
+}
+img{
+    width:100%;
+}
+
+
+.bottom{
+    position: absolute;
+    bottom:1rem;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+
+.main{
+    background-color: #eaeaea;
+    overflow: hidden;
+
+}
+
+.full-page{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.preload{
+    background: #398dee;
+}
+
+.preload-bottom{
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.preload-text{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    font-size: 18px;
+    line-height: 1.5;
+    color:#fff;
+}
+.preload-percent{
+    display: block;
+}
+
+.wrap,.wrap > li{
+    height:100%;
+}
+
+.wrap > li{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    display: none;
+
+}
+
+.page{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+.scene_1 > .page{
+    /*background: -webkit-linear-gradient(red, blue); */
+    /*background: -o-linear-gradient(red, blue); */
+    /*background: -moz-linear-gradient(red, blue); */
+    /*background: linear-gradient(to right,#243151, #4b515d 50%, #0d0e12);*/
+    background:url("../img/phoneBg.jpg") no-repeat 0 0;
+    background-size:cover;
+}
+.scene_1 .s_1_1{
+    /*background:url("../img/phoneHeadName.png") no-repeat 0 0;*/
+    width:3.5rem;
+    height:1.15rem;
+    background-size:100%;
+    margin:1rem auto .2rem;
+    font-size:36px;
+    color:#fff;
+}
+.scene_1 .s_1_bg{
+    display: block;
+    background:url("../img/phoneBtn.png") no-repeat 0 0;
+    width:5.2rem;
+    height:3.6rem;
+    background-size:100%;
+    margin:0 auto;
+
+}
+
+.s_1_btn{
+    z-index:2;
+}
+
+.s_1_btn,.scene_1 .s_1_twinkle{
+    position: absolute;
+    border-radius: 50%;
+    width: 1.1rem;
+    height: 1.1rem;
+    right: 1.34rem;
+    bottom: 0.72rem;
+}
+
+.scene_1 .s_1_twinkle{
+    content:"";
+    box-shadow: 0 0 0.6rem .06rem #4cd864;
+    border:1px solid #4cd864;
+    transform: scale3d(1.2, 1.2, 1.2);
+    opacity:0;
+    animation: Twinkle 1s linear infinite;
+    z-index:-1;
+}
+
+@keyframes Twinkle {
+
+    from {
+        opacity: 0;
+        /*-webkit-transform: scale3d(.6, .6, .6);*/
+        /*transform: scale3d(.6, .6, .6); */
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        opacity: 1;
+    }
+    /*0%{*/
+        /*transform:scale(1.2);*/
+    /*}*/
+
+    /*100%{*/
+        /*transform:scale(0);*/
+    /*}*/
+}
+
+.scene_1 .s_1_3{
+    background:url("../img/phoneKey.png") no-repeat 0 0;
+    width:5.2rem;
+    height:6.59rem;
+    background-size:100%;
+    transform: translateY(120%);
+    transition:all .3s ease-in-out;
+}
+
+.scene_1 .s_1_3 .s_1_detail_btn{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    right: 50%;
+    bottom: 0.4rem;
+    transform: translateX(50%);
+ }
+
+.scene_1,.scene_2{
+    transition: all .5s;
+    transform: translateY(0);
+}
+
+/*第二屏*/
+
+.s_2_meg{
+    background: url("../img/messageText.png") no-repeat 0 0;
+    width: 100%;
+    height: 1rem;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.s_2_z{
+    width: 3.2rem;
+    margin: 0;
+    position: absolute;
+    left: 1.5rem;
+    bottom: .3rem;
+}
+#messageList{
+    transition:all .3s ;
+}
+#messageList img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+#messageList li{
+    overflow: hidden;
+    line-height: 2;
+    padding: 0.1rem .2rem;
+    opacity: 0;
+
+    transform: translateY(100px);
+    transition:all .3s;
+
+}
+#messageList p{
+    max-width: 250px;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius:6px;
+    background: #fff;
+
+}
+#messageList li:nth-of-type(2n+1) p{
+    background: #4cd864;
+
+}
+.sty1 img{
+    float:left;
+
+}
+.sty2 img{
+    float:right;
+
+}
+.sty1 p{
+    margin:0 0 0 50px;
+
+}
+.sty2 p{
+    margin:0 50px 0 0;
+
+}
+
+#messageList.step1 li:nth-of-type(1),#messageList.step2 li:nth-of-type(2),
+#messageList.step3 li:nth-of-type(3),#messageList.step4 li:nth-of-type(4)
+,#messageList.step5 li:nth-of-type(5),#messageList.step6 li:nth-of-type(6)
+,#messageList.step7 li:nth-of-type(7){
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#messageList.step1 {
+}
+
+.translateY{
+    transform:translateY(0);
+}
+
+.audio_time{
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    font-family: monospace;
+}
+
+
+.scene_3{}
+.scene_3 > .page{
+    background:url("../img/cubeBg.jpg") no-repeat 0 0;
+    background-size:cover;
+
+    display:-moz-box;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+
+    /*display:-o-box;*/
+    display:box;
+
+    display:flex;
+
+
+    /* 水平布局下的子元素 水平居中 */
+    /*-webkit-box-pack: justify;*/
+    /*-ms-flex-pack: justify;*/
+
+    -moz-box-pack:justify;
+    -webkit-box-pack:justify;
+    -o-box-pack:justify;
+    box-pack:justify;
+
+    /* 12版 */
+    -webkit-justify-content:space-around;
+    justify-content:space-around;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+
+}
+.s_3_p{
+    width: 3rem;
+    height: 3rem;
+    transition:all .3s ease-in-out;
+}
+.s_3_p:nth-of-type(2n){
+    transform:translateX(-100px)
+}
+.s_3_p:nth-of-type(2n+1){
+    transform:translateX(200px)
+}
+.s_3_p img{
+    display: none;
+    width:100%;
+}

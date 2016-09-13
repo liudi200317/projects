@@ -1,0 +1,108 @@
+@media screen and (max-width: 321px) {
+    body {
+        font-size:16px
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width:400px) {
+    body {
+        font-size:17px
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        font-size:19px
+    }
+}
+
+html,body,div,ul{
+    margin:0;
+    padding:0;
+}
+
+html,body,.main{
+    height:100%;
+}
+
+ul li{
+    list-style:none;
+}
+img{
+    width:100%;
+}
+
+
+.wrap,.wrap > li{
+    height:100%;
+}
+
+.wrap > li{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    /*display: none;*/
+
+}
+
+.page{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+.scene_3{}
+ .page{
+    background:url("../img/cubeBg.jpg") no-repeat 0 0;
+    background-size:cover;
+
+    /*display: -webkit-box; */
+    /*display: -moz-box; */
+    /*display: -ms-flexbox; */
+    /*display: -webkit-flex;*/
+    /*display: flex; */
+
+    -webkit-box-pack: justify;
+    /*-moz-justify-content: space-around;*/
+    /*-webkit-justify-content: space-around;*/
+    /*justify-content:space-around;*/
+
+
+
+    /*-webkit-flex-flow: row wrap;*/
+    /*flex-flow: row wrap;*/
+
+    /*-webkit-box-align: center;*/
+    /*-moz-align-items: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    align-items: center;
+
+}
+.s_3_p{
+    width: 3rem;
+    height: 3rem;
+    transition:all .3s ease-in-out;
+}
+.s_3_p img{
+    /*display: none;*/
+    width:100%;
+}
